@@ -3,35 +3,84 @@
 <head>
   <title>CANDLE - HOW TO MAKE </title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:black;
+      text-decoration:none;
+    }
+    body {
+      margin: 0px;
+    }
+    #active{
+      color:red;
+    }
+    .saw {
+      color:gray;
+    }
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid ol {
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+      padding-left: 25px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">Home Fragrance</a></h1>
-  <ol>
-    <li><a href="1.html">Diffuser</a></li>
-    <li><a href="2.html">Candle</a></li>
-    <li><a href="3.html">Essential Oil</a></li>
-  </ol>
-  <h2>Candle</h2>
-  <p>Simple, easy, and inexpensive homemade version of commercial reed diffusers.</p>
-  <img src="diffuser.jpg" width="30%">
-  <p><h3>Ingredients</h3></p>
-  <ol>
-    <li>1/4 cup safflower oil (Or you can use distilled water.)</li>
-    <strong><li><a href="https://www.bustle.com/p/the-7-best-reed-diffusers-8470670" target="_blank" title="The 7 Best Reed"> 5-6 reed sticks if using oil. Or bamboo skewers (if using water).</a></li></strong>
-    <li>25-30 drops essential oil</li>
-    <li>1-2 tablespoons isopropyl alcohol (or vodka (whatever you use, make sure it's at least 90-95% alcohol))</li>
-    <li>Small jar with small opening</li>
-  </ol>
-  <p><h3>Instructions</h3></p>
-  <p>In a glass measuring cup, add 1/4 cup of your carrier oil or 1/3 cup distilled water.
-    Add about 25-30 drops of essential oils
-    Add the alcohol and stir thoroughly to help it bind with the oils. Be sure to keep stirring until it's all incorporated well.
-    Add the mixture to your jar.
-    Insert the sticks into the jar.
-    After a few hours, flip the sticks over and insert the dry end into the jar to saturate the other end.
-    Continue to swirl the jar and flip the sticks over about every week or so until the scent has diminished. Then, you can just add some more essential oils to the mix, swirl, and start again!</p>
-  <p><h3>Recipe Notes</h3></p>
-  <p>Once the sticks become completely saturated with oil, they lose the ability to diffuse and will need to be replaced.
-    If your liquid starts to look or smell "off", dump it out, wash the jar, and make a new batch.</P>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">Diffuser</a></li>
+      <li><a href="2.html" class="saw" id="active">Candle</a></li>
+      <li><a href="3.html">Essential Oil</a></li>
+    </ol>
+  <!-- 코드로써 기능 상실 기능
+    <h1><a href="index.html"><font color="red">Home Fragrance</font></a></h1>
+    <ol>
+      <li><a href="1.html"><font color="red">Diffuser</font></a></li>
+      <li><a href="2.html"><font color="red">Candle</font></a></li>
+      <li><a href="3.html"><font color="red">Essential Oil</font></a></li>
+    </ol>
+  -->
+    <div id="article">
+      <h2>Candle</h2>
+      <p>Simple, easy, and inexpensive homemade version of commercial reed diffusers.</p>
+      <img src="diffuser.jpg" width="30%">
+      <p><h3>Ingredients</h3></p>
+      <ul>
+        <li>1/4 cup safflower oil (Or you can use distilled water.)</li>
+        <strong><li><a href="https://www.bustle.com/p/the-7-best-reed-diffusers-8470670" target="_blank" title="The 7 Best Reed"> 5-6 reed sticks if using oil. Or bamboo skewers (if using water).</a></li></strong>
+        <li>25-30 drops essential oil</li>
+        <li>1-2 tablespoons isopropyl alcohol (or vodka (whatever you use, make sure it's at least 90-95% alcohol))</li>
+        <li>Small jar with small opening</li>
+      </ul>
+      <p><h3>Instructions</h3></p>
+      <ul>
+        <li>In a glass measuring cup, add 1/4 cup of your carrier oil or 1/3 cup distilled water.</li>
+        <li>Add about 25-30 drops of essential oils</li>
+        <li>Add the alcohol and stir thoroughly to help it bind with the oils.</li>
+        <li>Be sure to keep stirring until it's all incorporated well.</li>
+        <li>Add the mixture to your jar.</li>
+        <li>Insert the sticks into the jar.</li>
+        <li>After a few hours, flip the sticks over and insert the dry end into the jar to saturate the other end.</li>
+        <li>Continue to swirl the jar and flip the sticks over about every week or so until the scent has diminished.</li>
+        <li>Then, you can just add some more essential oils to the mix, swirl, and start again!</li>
+      </ul>
+      <p><h3>Recipe Notes</h3></p>
+      <p>Once the sticks become completely saturated with oil, they lose the ability to diffuse and will need to be replaced.
+        If your liquid starts to look or smell "off", dump it out, wash the jar, and make a new batch.</P>
+    </div>
+  </div>
 </body>
 </html>
